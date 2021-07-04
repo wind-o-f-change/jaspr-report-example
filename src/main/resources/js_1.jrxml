@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="10b76ba0-0cc5-42fa-87ea-88bbb08f1f35">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<field name="telNum" class="java.lang.String"/>
+	<field name="someString" class="java.lang.String"/>
+	<field name="date" class="java.util.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="82" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="82" uuid="86347981-799a-4a9f-98a5-aaf5254aaa00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Sber Claim]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="4ba312c3-6d9c-47db-bf39-4309671ccd00">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="010dc284-56be-4b98-895c-45fa33f113f6"/>
+				</reportElement>
+				<text><![CDATA[tel_num]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="100" height="30" uuid="32063a3f-ed25-4f7d-b3c4-ee0d160987da">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="72aac4f5-6a95-4b46-b5fb-11185fd5a081"/>
+				</reportElement>
+				<text><![CDATA[some_string]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="100" height="30" uuid="54f829a6-e437-416c-83aa-99494b8e2537">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5174fed-5eb5-4ab8-a3d6-085263b782a9"/>
+				</reportElement>
+				<text><![CDATA[\ - date - /]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<textField>
+				<reportElement x="0" y="0" width="185" height="125" uuid="3321f286-b19a-4f66-995d-dad2c7837d37">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="010dc284-56be-4b98-895c-45fa33f113f6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{telNum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="125" uuid="3d1a1d90-9f03-415a-a7ca-684b6c9ec2b5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="72aac4f5-6a95-4b46-b5fb-11185fd5a081"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{someString}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="125" uuid="69f622fe-8205-4de5-a686-8878763fc366">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5174fed-5eb5-4ab8-a3d6-085263b782a9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
